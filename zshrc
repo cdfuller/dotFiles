@@ -87,7 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
 export DEFAULT_USER="cody"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
