@@ -25,3 +25,20 @@
 * Sublime Text
 * VLC
 * VS Code
+
+### Brew
+* cowsay
+* elixir
+* git
+* node
+* pyenv
+* pyenv-virtualenv
+* rbenv
+* sl
+* sqlite
+* tree
+* vim
+* wget
+* youtube-dl
+* zsh
+* zsh-syntax-highlighting
