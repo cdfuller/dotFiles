@@ -52,9 +52,10 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew catimg celery django docker node npm osx pip python pyenv rails ruby vagrant virtualenvwrapper bundler)
+# plugins=(git brew catimg celery django docker node npm osx pip python pyenv rails ruby vagrant virtualenvwrapper bundler)
+plugins=(git brew catimg celery django docker node npm osx rails ruby vagrant bundler)
 
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
 source $ZSH/oh-my-zsh.sh
 
