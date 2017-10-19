@@ -30,7 +30,7 @@ ZSH_THEME="dracula"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -53,7 +53,7 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git brew catimg celery django docker node npm osx pip python pyenv rails ruby vagrant virtualenvwrapper bundler)
-plugins=(git brew catimg celery django docker node npm osx rails ruby vagrant bundler)
+plugins=(git brew catimg celery django docker node npm osx rails ruby vagrant bundler command-not-found pip python)
 
 # export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 

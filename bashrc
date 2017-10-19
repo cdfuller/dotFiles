@@ -24,9 +24,17 @@ PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:
 PATH="$(pyenv root)/shims:${PATH}"
 export PATH
 
-# export PYENV_ROOT=/usr/local/opt/pyenv 
+# # PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+PATH="$(pyenv root)/shims:${PATH}"
+export PATH
+
+# # export PYENV_ROOT=/usr/local/opt/pyenv 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
