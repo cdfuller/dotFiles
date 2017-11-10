@@ -7,14 +7,15 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = /Users/cody/.gitignore_global
 [alias]
-	unstage = reset HEAD --
+	c = commit
 	co = checkout
 	f= fetch -v
-	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	unstage = reset HEAD --
 [push]
 	default = simple
 [init]
-	templatedir = ~/.git-templates
+	# templatedir = ~/.git-templates
 [diff]
 	tool = meld
 [filter "lfs"]
