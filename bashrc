@@ -92,9 +92,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 
 # if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
-cowsay $(fortune -a)
