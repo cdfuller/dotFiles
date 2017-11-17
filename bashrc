@@ -8,7 +8,6 @@ function ne do { (PATH=$(npm bin):$PATH; eval $@;) }
 
 alias be="bundle exec"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
-alias cat="ccat"
 alias d="python ~/Code/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias gst="git status"
