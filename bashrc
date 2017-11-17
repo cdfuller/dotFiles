@@ -84,6 +84,9 @@ export PATH
 PATH="$(pyenv root)/shims:${PATH}"
 export PATH
 
+PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:${PATH}"
+export PATH
+
 # # export PYENV_ROOT=/usr/local/opt/pyenv 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
