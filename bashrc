@@ -63,6 +63,7 @@ alias dps="docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }}
 
 alias be="bundle exec"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+#alias cat="ccat"
 alias d="python ~/Code/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias gst="git status"
@@ -73,6 +74,8 @@ alias open-docker="socat -d TCP-LISTEN:2375,reuseaddr,fork UNIX:/var/run/docker.
 alias server="python -m http.server"
 alias t="exa -l --git --group-directories-first -T"
 
+export GOPATH=~/.go
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
@@ -80,14 +83,11 @@ PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:
 PATH="$(pyenv root)/shims:${PATH}"
 export PATH
 
-# # PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-PATH="$(pyenv root)/shims:${PATH}"
-export PATH
-
+# Use cli tools from Postgres.app
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:${PATH}"
 export PATH
 
-# # export PYENV_ROOT=/usr/local/opt/pyenv 
+# export PYENV_ROOT=/usr/local/opt/pyenv 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -101,3 +101,4 @@ function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
   iterm2_set_user_var repoDir $(basename $(git rev-parse --show-toplevel 2> /dev/null) 2> /dev/null)
 }
+
