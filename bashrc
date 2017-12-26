@@ -75,6 +75,8 @@ alias open-docker="socat -d TCP-LISTEN:2375,reuseaddr,fork UNIX:/var/run/docker.
 alias server="python -m http.server"
 alias t="exa -l --git --group-directories-first -T"
 
+export CDPATH=~/Code:~/Code/sandbox
+
 export GOPATH=~/.go
 
 export PATH="$HOME/.rbenv/bin:$PATH"
