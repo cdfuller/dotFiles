@@ -111,6 +111,7 @@ alias i="PYENV_VERSION=3.6.3 ipython"
 # alias l="exa -alhmF --git --group-directories-first"
 alias open-docker="socat -d TCP-LISTEN:2375,reuseaddr,fork UNIX:/var/run/docker.sock"
 alias server="python -m http.server"
+alias s="server"
 alias t="exa -l --git --group-directories-first -T"
 
 
