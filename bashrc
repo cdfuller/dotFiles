@@ -31,7 +31,17 @@ function mkcd() {
   cd "$1"
   echo -e "\e$BGreen Created\e$Color_Off `realpath ..`/\e$BBlue`basename $(pwd)`\e$Color_Off"
 }
-function ne do { (PATH=$(npm bin):$PATH; eval $@;) }
+
+function l() {
+  exa -alhmF --git --group-directories-first $1
+  echo -n -e "\e$BBlue"
+  realpath ${1:-.}
+  echo -n -e "\e$Color_Off"
+}
+
+function ne {
+  (PATH=$(npm bin):$PATH; eval $@;)
+}
 
 # ------------------------------------
 # Docker alias and function
