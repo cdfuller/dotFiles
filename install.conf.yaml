@@ -5,6 +5,7 @@
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.pythonrc: pythonrc
     ~/.zshrc: zshrc
 
 

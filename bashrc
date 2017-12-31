@@ -114,6 +114,8 @@ alias server="python -m http.server"
 alias t="exa -l --git --group-directories-first -T"
 
 
+export PYTHONSTARTUP="$HOME/.pythonrc"
+
 export CDPATH=~/Code:~/Code/sandbox
 
 export GOPATH=~/.go
