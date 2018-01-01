@@ -34,9 +34,8 @@ function mkcd() {
 
 function l() {
   exa -alhmF --git --group-directories-first $1
-  echo -n -e "\e$BBlue"
-  realpath ${1:-.}
-  echo -n -e "\e$Color_Off"
+  p=`realpath ${1:-.}`
+  echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
 
 function ne {
