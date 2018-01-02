@@ -32,6 +32,9 @@ function mkcd() {
   echo -e "\e$BGreen Created\e$Color_Off `realpath ..`/\e$BBlue`basename $(pwd)`\e$Color_Off"
 }
 
+# .oh-my-zsh/lib/directories.sh creates an alias for 'l' by default
+# This disables it
+unalias l
 function l() {
   exa -alhmF --git --group-directories-first $1
   p=`realpath ${1:-.}`
