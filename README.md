@@ -28,12 +28,17 @@
 * VS Code
 
 ### Brew
+* coreutils
 * cowsay
+* diff-so-fancy
 * elixir
+* exa
 * git
 * node
 * pyenv
 * pyenv-virtualenv
+* python3
+* readline
 * rbenv
 * sl
 * sqlite
@@ -42,4 +47,5 @@
 * wget
 * youtube-dl
 * zsh
+* zsh-completions
 * zsh-syntax-highlighting
