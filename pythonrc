@@ -8,3 +8,7 @@ def pp(obj, depth=None):
 
 def ppd(obj, depth=None):
   pp(dir(obj), depth=depth)
+
+print()
+print("Loaded requests, pp(), and ppd() from .pythonrc!")
+print("Have a nice day!")
