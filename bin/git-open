@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+url=`git remote get-url ${1:-origin}`
+echo $url
+open $url

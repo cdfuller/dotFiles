@@ -133,6 +133,9 @@ export CDPATH=~/Code:~/Code/sandbox
 
 export GOPATH=~/.go
 
+PATH="$HOME/.dotFiles/bin:$PATH"
+export PATH
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
