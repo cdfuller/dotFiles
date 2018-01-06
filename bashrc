@@ -129,7 +129,7 @@ alias t="exa -l --git --group-directories-first -T"
 
 export PYTHONSTARTUP="$HOME/.pythonrc"
 
-export CDPATH=~/Code:~/Code/sandbox
+export CDPATH=~/Code:~/Code/sandbox:~/.dotFiles/CDPATH
 
 export GOPATH=~/.go
 
