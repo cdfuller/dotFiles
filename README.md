@@ -49,3 +49,8 @@
 * zsh
 * zsh-completions
 * zsh-syntax-highlighting
+
+
+## Add directories to the CDPATH
+
+`ln -s "absolute_path_of_target_dir" "~/.dotFiles/CDPATH/target_dir_name"`
