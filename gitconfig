@@ -7,7 +7,7 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = /Users/cody/.gitignore_global
 [alias]
-	c = commit
+	c = commit -m
 	co = checkout
 	f= fetch -v
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
