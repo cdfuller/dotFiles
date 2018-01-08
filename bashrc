@@ -41,7 +41,7 @@ function l() {
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
 
-function pwd() {
+function p() {
   p=`realpath ${1:-.}`
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
