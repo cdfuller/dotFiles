@@ -119,7 +119,7 @@ alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:
 alias gst="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias gd="git diff --word-diff"
-alias i="PYENV_VERSION=3.6.3 ipython"
+alias i="PYENV_VERSION=3.6.4 ipython"
 # alias l="exa -alhmF --git --group-directories-first"
 alias open-docker="socat -d TCP-LISTEN:2375,reuseaddr,fork UNIX:/var/run/docker.sock"
 alias server="python -m http.server"
