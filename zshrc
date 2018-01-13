@@ -54,8 +54,8 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git brew catimg celery django docker node npm osx pip python pyenv rails ruby vagrant virtualenvwrapper bundler)
-plugins=(git brew catimg celery django docker node npm osx rails ruby vagrant bundler command-not-found pip python)
+
+plugins=(catimg django docker node npm osx rails ruby bundler pip python)
 
 # export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
