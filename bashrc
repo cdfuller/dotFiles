@@ -113,14 +113,13 @@ alias dps="docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }}
 alias be="bundle exec"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias c='code'
-#alias cat="ccat"
 alias d="python ~/Code/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias gst="git status"
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+alias gc="git commit -m "
 alias gd="git diff --word-diff"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias i="PYENV_VERSION=3.6.4 ipython"
-# alias l="exa -alhmF --git --group-directories-first"
 alias open-docker="socat -d TCP-LISTEN:2375,reuseaddr,fork UNIX:/var/run/docker.sock"
 alias server="python -m http.server"
 alias s="server"
