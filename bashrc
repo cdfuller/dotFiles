@@ -132,6 +132,8 @@ export CDPATH=~/Code:~/Code/sandbox:~/.dotFiles/CDPATH
 
 export GOPATH=~/.go
 
+export HISTCONTROL=ignorespace
+
 PATH="$HOME/.dotFiles/bin:$PATH"
 export PATH
 
