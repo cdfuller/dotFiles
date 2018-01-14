@@ -116,6 +116,7 @@ alias c='code'
 alias cd='HOME=~/Code cd'
 alias d="python ~/Code/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
+alias ga="git add"
 alias gst="git status"
 alias gc="git commit -m "
 alias gd="git diff --word-diff"
