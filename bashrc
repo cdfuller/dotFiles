@@ -113,6 +113,7 @@ alias dps="docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }}
 alias be="bundle exec"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias c='code'
+alias cd='HOME=~/Code cd'
 alias d="python ~/Code/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias gst="git status"
