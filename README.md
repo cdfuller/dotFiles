@@ -34,6 +34,7 @@
 * elixir
 * exa
 * git
+* git-extras
 * node
 * pyenv
 * pyenv-virtualenv
