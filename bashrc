@@ -136,6 +136,7 @@ export GOPATH=~/.go
 
 export HISTCONTROL=ignorespace
 
+# Add bin directory for git subcommands
 PATH="$HOME/.dotFiles/bin:$PATH"
 export PATH
 
