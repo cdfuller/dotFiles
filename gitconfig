@@ -18,6 +18,11 @@
 	# templatedir = ~/.git-templates
 [diff]
 	tool = meld
+[color "diff"]
+	meta = yellow
+	frag = blue bold reverse
+	old = red
+	new = green
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
