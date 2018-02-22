@@ -55,6 +55,12 @@ function ne {
   (PATH=$(npm bin):$PATH; eval $@;)
 }
 
+function p5-start {
+  git clone https://github.com/cdfuller/p5-skeleton "$1"
+  cd "$1"
+  rm -rf .git
+}
+
 # ------------------------------------
 # Docker alias and function
 # https://gist.github.com/jverdeyen/741d29a8e8d7a8e5d4dd4346fd1bd788
