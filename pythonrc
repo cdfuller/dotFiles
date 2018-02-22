@@ -9,6 +9,16 @@ def pp(obj, depth=None):
 def ppd(obj, depth=None):
   pp(dir(obj), depth=depth)
 
+def splitQS(qs):
+  lines = qs.split('&')
+  d = [l.split('=') for l in lines]
+  return d
+
 print()
-print("Loaded requests, pp(), and ppd() from .pythonrc!")
+print("Loading...")
+print("requests")
+print("pp(obj, depth=None)")
+print("ppd(obj, depth=None)")
+print("splitQS(qs)")
+print()
 print("Have a nice day!")
