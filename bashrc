@@ -148,24 +148,28 @@ export PATH
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
-PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-PATH="$(pyenv root)/shims:${PATH}"
-export PATH
+# PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+# PATH="$(pyenv root)/shims:${PATH}"
+# export PATH
 
 # Use cli tools from Postgres.app
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:${PATH}"
 export PATH
 
 # export PYENV_ROOT=/usr/local/opt/pyenv 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
 
+
 # if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+eval "$(pyenv init -)"
 
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
