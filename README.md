@@ -35,6 +35,7 @@
 * exa
 * git
 * git-extras
+* go
 * node
 * pyenv
 * pyenv-virtualenv
