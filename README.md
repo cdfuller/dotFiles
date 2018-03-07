@@ -18,7 +18,6 @@
 * Processing
 * Transmission
 * Slack
-  * nexthealthchoice
   * codingtrain
   * replyall
   * chicago-tech
