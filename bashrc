@@ -120,7 +120,7 @@ alias be="bundle exec"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias c='code'
 alias cd='HOME=~/Code cd'
-alias d="python ~/Code/separate.py"
+alias d="python ~/.dotFiles/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias ga="git add"
 alias gst="git status"
@@ -128,7 +128,6 @@ alias gc="git commit -m "
 alias gd="git diff --word-diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias i="PYENV_VERSION=3.6.4 ipython"
-alias open-docker="socat -d TCP-LISTEN:2375,reuseaddr,fork UNIX:/var/run/docker.sock"
 alias server="python -m http.server"
 alias s="server"
 alias t="exa -l --git --group-directories-first -T"
@@ -154,22 +153,16 @@ eval "$(pyenv virtualenv-init -)"
 # PATH="$(pyenv root)/shims:${PATH}"
 # export PATH
 
+# export PYENV_ROOT=/usr/local/opt/pyenv 
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # Use cli tools from Postgres.app
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:${PATH}"
 export PATH
 
-# export PYENV_ROOT=/usr/local/opt/pyenv 
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-
-
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
-
-
-# if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
-eval "$(pyenv init -)"
 
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
