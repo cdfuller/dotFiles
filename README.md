@@ -55,3 +55,7 @@
 ## Add directories to the CDPATH
 
 `ln -s "absolute_path_of_target_dir" "~/.dotFiles/CDPATH/target_dir_name"`
+
+## TODO
+   * Add CDPATH linking as a script to get around different usernames
+
