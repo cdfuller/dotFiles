@@ -149,6 +149,12 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+  source $HOME/.rvm/scripts/rvm;
+fi
+
+export PATH="$PATH:$HOME/.rvm/bin"
+
 # PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 # PATH="$(pyenv root)/shims:${PATH}"
 # export PATH

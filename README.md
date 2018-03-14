@@ -11,6 +11,11 @@
 * homebrew
 * iTerm2
     * https://stackoverflow.com/questions/6205157/iterm-2-how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line
+
+    * Setting up different profile for remote machine
+    * https://stackoverflow.com/a/27809281
+    * Need to figure out hostname setting
+
 * Magnet
   * Mac App Store
 * Private Internet Access
@@ -55,3 +60,7 @@
 ## Add directories to the CDPATH
 
 `ln -s "absolute_path_of_target_dir" "~/.dotFiles/CDPATH/target_dir_name"`
+
+## TODO
+   * Add CDPATH linking as a script to get around different usernames
+
