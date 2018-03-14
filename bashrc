@@ -128,7 +128,7 @@ alias gc="git commit -m "
 alias gd="git diff --word-diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias i="PYENV_VERSION=3.6.4 ipython"
-alias server="python -m http.server"
+alias server="python3 -m http.server"
 alias s="server"
 alias t="exa -l --git --group-directories-first -T"
 
