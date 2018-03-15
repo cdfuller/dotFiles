@@ -61,6 +61,16 @@ function p5-start {
   rm -rf .git
 }
 
+# Create path and file
+# https://stackoverflow.com/a/37567557
+ptouch() {
+    for p in "$@"; do
+        _dir="$(dirname -- "$p")"
+        [ -d "$_dir" ] || mkdir -p -- "$_dir"
+    touch -- "$p"
+    done
+}
+
 # ------------------------------------
 # Docker alias and function
 # https://gist.github.com/jverdeyen/741d29a8e8d7a8e5d4dd4346fd1bd788
