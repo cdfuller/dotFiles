@@ -159,11 +159,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-  source $HOME/.rvm/scripts/rvm;
-fi
-
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 # PATH="$(pyenv root)/shims:${PATH}"
@@ -176,6 +171,12 @@ eval "$(pyenv virtualenv-init -)"
 # Use cli tools from Postgres.app
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:${PATH}"
 export PATH
+
+if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+  source $HOME/.rvm/scripts/rvm;
+fi
+
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
