@@ -10,6 +10,7 @@
 	c = commit -m
 	co = checkout
 	f= fetch -v
+	g= grep --context 3 --line-number --heading --break --exclude-standard --untracked
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	unstage = reset HEAD --
 [push]
