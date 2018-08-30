@@ -28,7 +28,7 @@ BWhite='\033[1;37m'       # White
 
 function mkcd() {
   mkdir "$1"
-  cd "$1"
+  cd "$1" > /dev/null
   echo -e "\e$BGreen Created\e$Color_Off `realpath ..`/\e$BBlue`basename $(pwd)`\e$Color_Off"
 }
 
