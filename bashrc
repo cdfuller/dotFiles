@@ -138,10 +138,17 @@ alias gc="git commit -m "
 alias gd="git diff --word-diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias i="PYENV_VERSION=3.6.4 ipython"
+alias real="realpath"
 alias server="python3 -m http.server"
 alias s="server"
 alias t="exa -l --git --group-directories-first -T"
 
+# Work aliases
+
+alias psql='PAGER=more /Applications/Postgres.app/Contents/Versions/latest/bin/psql'
+alias psqla='PAGER=more psql -h maggie.evergreen.autoaccessoriesgarage.com aag_development cf4414'
+
+# end work aliases
 
 export PYTHONSTARTUP="$HOME/.pythonrc"
 
@@ -155,14 +162,18 @@ export HISTCONTROL=ignorespace
 PATH="$HOME/.dotFiles/bin:$PATH"
 export PATH
 
+# Add aagdev bin directory
+PATH="$HOME/Code/aagdev/bin:$PATH"
+export PATH
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 
 # PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-# PATH="$(pyenv root)/shims:${PATH}"
-# export PATH
+PATH="$(pyenv root)/shims:${PATH}"
+export PATH
 
 # export PYENV_ROOT=/usr/local/opt/pyenv 
 eval "$(pyenv init -)"
