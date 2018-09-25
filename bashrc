@@ -46,6 +46,11 @@ function p() {
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
 
+function cd() {
+  HOME=~/Code builtin cd "$@" > /dev/null
+  p
+}
+
 function chpwd() {
   p=`realpath ${1:-.}`
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
@@ -129,7 +134,6 @@ alias dps="docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }}
 alias be="bundle exec"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias c='code'
-alias cd='HOME=~/Code cd'
 alias d="python ~/.dotFiles/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias ga="git add"
