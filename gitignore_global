@@ -104,3 +104,6 @@ jspm_packages/
 
 .vscode/
 .idea/
+.elixir_ls/
+*.iml
+.favorites.json
