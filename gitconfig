@@ -7,7 +7,7 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = ~/.gitignore_global
 [alias]
-	b = branch --all --verbose --verbose
+	b = branch --all --verbose --verbose --sort=-authordate
 	c = commit -m
 	co = checkout
 	f= fetch -v
