@@ -66,6 +66,10 @@ function p5-start {
   rm -rf .git
 }
 
+function status {
+  l
+}
+
 # Create path and file
 # https://stackoverflow.com/a/37567557
 ptouch() {
@@ -131,6 +135,7 @@ alias dps="docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }}
 # ------------------------------------
 # ------------------------------------
 
+alias .="status"
 alias be="bundle exec"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias c='code'
