@@ -42310,9 +42310,11 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>80F62951-F2F9-4869-9BCE-F257389380E4</string>
+	<string>0CA5300C-A333-4321-BC36-10A6439CC7F5</string>
 	<key>DimBackgroundWindows</key>
 	<true/>
+	<key>DisableGrowl</key>
+	<false/>
 	<key>DisableWindowSizeSnap</key>
 	<true/>
 	<key>EnableProxyIcon</key>
@@ -42332,6 +42334,20 @@
 			<integer>32</integer>
 			<key>Text</key>
 			<string></string>
+		</dict>
+		<key>0xd-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xd-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x10 0x0d</string>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
@@ -42436,8 +42452,12 @@
 	<integer>1048840</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>MaxVertically</key>
+	<true/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Backups/119_FUJI</string>
+	<string>~/.dotFiles/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -42471,17 +42491,30 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1228 839 630 343 0 0 3200 1778 </string>
+	<key>NSWindow Frame ProfilesPanel</key>
+	<string>663 1190 735 382 0 0 3008 1670 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>1194 958 620 392 0 0 3008 1670 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>798 472 796 473 0 0 1920 1178 </string>
+	<string>111 886 1016 512 0 0 3008 1670 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1920 0 1920 1178 1920 0 1920 1200 </string>
+	<string>3008 0 3008 1670 3008 0 3008 1670 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>960 1223 955 1155 0 1200 1920 1178 </string>
+	<string>3008 835 3008 835 3008 0 3008 1670 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>AWDS Pane Directory</key>
 			<string></string>
 			<key>AWDS Pane Option</key>
@@ -42507,12 +42540,16 @@
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.075083047151565552</real>
+				<real>0.3647918701171875</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.38295721187313603</real>
 				<key>Red Component</key>
-				<real>0.73976802825927734</real>
+				<real>1</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -42668,6 +42705,8 @@
 			</dict>
 			<key>Badge Text</key>
 			<string>\(user.repoDir) (\(user.gitBranch))</string>
+			<key>Blink Allowed</key>
+			<false/>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -42708,7 +42747,7 @@
 			<key>Cursor Guide Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>0.062745098039215685</real>
+				<real>0.11834716796875</real>
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Color Space</key>
@@ -42728,7 +42767,7 @@
 				<real>0.02988031692802906</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -42756,6 +42795,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Text</key>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -42932,6 +42973,14 @@
 					<integer>12</integer>
 					<key>Text</key>
 					<string>9</string>
+				</dict>
+				<key>0x52-0x120000</key>
+				<dict>
+					<key>Action</key>
+					<integer>25</integer>
+					<key>Text</key>
+					<string>Restart Session
+Restart Session</string>
 				</dict>
 				<key>0x7f-0x100000</key>
 				<dict>
@@ -43210,7 +43259,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 13</string>
+			<string>Hack-Regular 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -43226,7 +43275,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>10000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -43247,6 +43296,8 @@
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Session Close Undo Timeout</key>
+			<integer>10</integer>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
@@ -43254,9 +43305,22 @@
 			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Space</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<false/>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.0</real>
+				<key>Red Component</key>
+				<real>0.0</real>
+			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
@@ -43264,7 +43328,7 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -43274,6 +43338,8 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
+			<false/>
+			<key>Use Tab Color</key>
 			<false/>
 			<key>Use Underline Color</key>
 			<false/>
@@ -44899,18 +44965,22 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
-	<key>NoSyncHaveUsedCopyMode</key>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>412224DE-9F0D-4461-8AC8-0725A545DA75</string>
+	<string>C616E125-D7E5-4E2F-B2D4-6685600A01A2</string>
 	<key>NoSyncLastTipTime</key>
-	<real>544977618.21460795</real>
+	<real>561911903.41873801</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
+	<key>NoSyncSuppressRestartSessionConfirmationAlert</key>
+	<true/>
+	<key>NoSyncSuppressRestartSessionConfirmationAlert_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>542139038.066957</real>
+	<real>557769205.97612405</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -44936,6 +45006,31 @@
 		<string>0019</string>
 		<string>0020</string>
 		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0026</string>
+		<string>0025</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
+		<string>0038</string>
+		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -44949,7 +45044,7 @@
 		<key>Button,2,1,,</key>
 		<dict>
 			<key>Action</key>
-			<string>kPasteFromSelectionPointerAction</string>
+			<string>kPasteFromClipboardPointerAction</string>
 		</dict>
 		<key>Gesture,ThreeFingerSwipeDown,,</key>
 		<dict>
@@ -44981,19 +45076,19 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=31</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=50</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-06T18:41:26Z</date>
+	<date>2018-10-20T20:55:52Z</date>
 	<key>SUSendProfileInfo</key>
-	<false/>
-	<key>Secure Input</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>ShowMetalFPSmeter</key>
+	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -45008,6 +45103,8 @@
 	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
+	<key>UseMetal</key>
+	<false/>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
@@ -45019,10 +45116,10 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.2.3</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>0</integer>
+	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
