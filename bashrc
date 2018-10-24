@@ -147,6 +147,9 @@ alias gc="git commit -m "
 alias gd="git diff --word-diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias i="PYENV_VERSION=3.6.4 ipython"
+alias m="mix"
+alias python="python3"
+alias pip="pip3"
 alias real="realpath"
 alias server="python3 -m http.server"
 alias s="server"
@@ -167,13 +170,16 @@ export GOPATH=~/.go
 
 export HISTCONTROL=ignorespace
 
+# Enable shell history in IEx
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 # Add bin directory for git subcommands
 PATH="$HOME/.dotFiles/bin:$PATH"
 export PATH
 
-# Add aagdev bin directory
-PATH="$HOME/Code/aagdev/bin:$PATH"
+PATH="$HOME/Code/dev-tools/bin:$PATH"
 export PATH
+export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -205,4 +211,3 @@ function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
   iterm2_set_user_var repoDir $(basename $(git rev-parse --show-toplevel 2> /dev/null) 2> /dev/null)
 }
-
