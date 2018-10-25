@@ -47,7 +47,7 @@ function p() {
 }
 
 function cd() {
-  HOME=~/Code builtin cd "$@" > /dev/null
+  HOME=~/Code builtin cd -P "$@" > /dev/null
   p
 }
 
