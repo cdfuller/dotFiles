@@ -36,10 +36,15 @@ function mkcd() {
 # This disables it
 unalias l
 function l() {
-  exa -alhmF --git --group-directories-first $1
+  exa -alhmF --git --group-directories-first  --color-scale $1
   p=`realpath ${1:-.}`
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
+
+# function t() {
+#   exa -l --git --group-directories-first -T $1
+# }
+
 
 function p() {
   p=`realpath ${1:-.}`
@@ -141,18 +146,19 @@ alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias c='code'
 alias d="python ~/.dotFiles/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
+alias g="git"
 alias ga="git add"
 alias gst="git status"
 alias gc="git commit -m "
 alias gd="git diff --word-diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
-alias i="PYENV_VERSION=3.6.4 ipython"
-alias im="iex -S mix"
 alias m="mix"
+alias real="realpath"
+alias i="PYENV_VERSION=3.6.5 ipython"
+alias im="iex -S mix"
 alias mp="mix phx.server"
 alias python="python3"
 alias pip="pip3"
-alias real="realpath"
 alias server="python3 -m http.server"
 alias s="server"
 alias t="exa -l --git --group-directories-first -T"
@@ -181,6 +187,7 @@ export PATH
 
 PATH="$HOME/Code/dev-tools/bin:$PATH"
 export PATH
+
 export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -204,7 +211,7 @@ if [[ -s $HOME/.rvm/scripts/rvm ]]; then
   source $HOME/.rvm/scripts/rvm;
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
 
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
