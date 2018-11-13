@@ -45,6 +45,9 @@ function l() {
 #   exa -l --git --group-directories-first -T $1
 # }
 
+function e() {
+  code ${1:-.}
+}
 
 function p() {
   p=`realpath ${1:-.}`
