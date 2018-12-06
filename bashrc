@@ -157,21 +157,17 @@ alias gd="git diff --word-diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias m="mix"
 alias real="realpath"
-alias i="PYENV_VERSION=3.6.5 ipython"
+alias i="iex"
 alias im="iex -S mix"
+# alias ip="PYENV_VERSION=3.7.1 ipython"
+alias ip="ipython"
 alias mp="mix phx.server"
+alias mt="mix test --slowest 25 --seed 0"
 alias python="python3"
 alias pip="pip3"
 alias server="python3 -m http.server"
 alias s="server"
 alias t="exa -l --git --group-directories-first -T"
-
-# Work aliases
-
-alias psql='PAGER=more /Applications/Postgres.app/Contents/Versions/latest/bin/psql'
-alias psqla='PAGER=more psql -h maggie.evergreen.autoaccessoriesgarage.com aag_development cf4414'
-
-# end work aliases
 
 export PYTHONSTARTUP="$HOME/.pythonrc"
 
@@ -184,40 +180,28 @@ export HISTCONTROL=ignorespace
 # Enable shell history in IEx
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+# Homebrew ruby
+PATH="/usr/local/opt/ruby/bin:$PATH"
+
 # Add bin directory for git subcommands
 PATH="$HOME/.dotFiles/bin:$PATH"
-export PATH
 
+# Transport tech dev-tools
 PATH="$HOME/Code/dev-tools/bin:$PATH"
+
+# make
+PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
+# elixir
+PATH="$HOME/.mix:$PATH"
 export PATH
 
 export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-
-# PATH="$(pyenv root)/shims:/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-PATH="$(pyenv root)/shims:${PATH}"
-export PATH
-
-# export PYENV_ROOT=/usr/local/opt/pyenv 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# Use cli tools from Postgres.app
-PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:${PATH}"
-export PATH
 
 if [[ -s $HOME/.rvm/scripts/rvm ]]; then
   source $HOME/.rvm/scripts/rvm;
 fi
-
-# export PATH="$PATH:$HOME/.rvm/bin"
-
-# export NVM_DIR=~/.nvm
-# source $(brew --prefix nvm)/nvm.sh
 
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
