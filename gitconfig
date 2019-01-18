@@ -7,6 +7,7 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = ~/.gitignore_global
 [alias]
+	a = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
 	b = branch --all --verbose --verbose --sort=-authordate
 	c = commit -m
 	co = checkout
