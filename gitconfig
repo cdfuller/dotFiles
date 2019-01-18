@@ -9,23 +9,20 @@
 [alias]
 	a = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
 	b = branch --all --verbose --verbose --sort=-authordate
-	c = commit -m
 	co = checkout
 	f= fetch -v
 	g= grep --context 3 --line-number --heading --break --exclude-standard --untracked
-	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 25 --no-merges
+	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 25
 	unstage = reset HEAD --
 [push]
-	default = simple
-[init]
-	# templatedir = ~/.git-templates
-[diff]
-	tool = meld
+	default = current
 [color "diff"]
 	meta = yellow
 	frag = blue bold reverse
 	old = red
 	new = green
+	whitespace = red reverse
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
