@@ -191,6 +191,11 @@ PATH="$HOME/Code/dev-tools/bin:$PATH"
 
 # make
 PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
+
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # elixir
 PATH="$HOME/.mix:$PATH"
@@ -199,11 +204,13 @@ export PATH
 export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
 
 
-if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-  source $HOME/.rvm/scripts/rvm;
-fi
+# if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+#   source $HOME/.rvm/scripts/rvm;
+# fi
 
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
   iterm2_set_user_var repoDir $(basename $(git rev-parse --show-toplevel 2> /dev/null) 2> /dev/null)
 }
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

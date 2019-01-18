@@ -55,7 +55,7 @@ ZSH_CUSTOM=~/.dotFiles/ohmyzsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(catimg django docker npm osx rails bundler pip python pyenv)
+# plugins=(catimg)
 
 # export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
