@@ -167,6 +167,7 @@ alias im="iex -S mix"
 # alias ip="PYENV_VERSION=3.7.1 ipython"
 alias ip="ipython"
 alias mp="mix phx.server"
+alias pglog="lnav /usr/local/var/log/postgres.log"
 alias python="python3"
 alias pip="pip3"
 alias server="python3 -m http.server"
@@ -180,6 +181,8 @@ export CDPATH=~/Code:~/Code/sandbox:~/.dotFiles/CDPATH
 export GOPATH=~/.go
 
 export HISTCONTROL=ignorespace
+
+export HOMEBREW_DEVELOPER=1
 
 # Enable shell history in IEx
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -201,8 +204,12 @@ export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
 # eval "$(rbenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 
+PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+
 # elixir
 PATH="$HOME/.mix:$PATH"
+
+
 export PATH
 
 export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
