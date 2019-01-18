@@ -64,6 +64,11 @@ function chpwd() {
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
 
+function mt() {
+  echo "Running 'mix test --seed 0'"
+  mix test --seed 0
+}
+
 function ne {
   (PATH=$(npm bin):$PATH; eval $@;)
 }
@@ -162,7 +167,6 @@ alias im="iex -S mix"
 # alias ip="PYENV_VERSION=3.7.1 ipython"
 alias ip="ipython"
 alias mp="mix phx.server"
-alias mt="mix test --slowest 25 --seed 0"
 alias python="python3"
 alias pip="pip3"
 alias server="python3 -m http.server"
