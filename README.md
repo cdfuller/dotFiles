@@ -32,29 +32,34 @@
 * VS Code
 
 ### Brew
-* coreutils
-* cowsay
-* diff-so-fancy
-* elixir
-* exa
-* git
-* git-extras
-* go
-* node
-* pyenv
-* pyenv-virtualenv
-* python3
-* readline
-* rbenv
-* sl
-* sqlite
-* tree
-* vim
-* wget
-* youtube-dl
-* zsh
-* zsh-completions
-* zsh-syntax-highlighting
+```
+brew install \
+coreutils \
+cowsay \
+diff-so-fancy \
+elixir \
+exa \
+fzf \
+git \
+git-extras \
+go \
+node \
+pyenv \
+pyenv-virtualenv \
+python3 \
+readline \
+rbenv \
+sl \
+sqlite \
+tree \
+vim \
+wget \
+youtube-dl \
+zsh \
+zsh-completions \
+zsh-syntax-highlighting
+
+```
 
 
 ## Add directories to the CDPATH
