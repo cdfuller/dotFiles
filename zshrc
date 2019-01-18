@@ -99,3 +99,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
