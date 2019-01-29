@@ -64,6 +64,11 @@ function chpwd() {
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
 
+function gti() {
+  echo "Vroom! Vroom!"
+  git $@
+}
+
 function mt() {
   echo "Running 'mix test --seed 0'"
   mix test --seed 0
