@@ -41,10 +41,6 @@ function l() {
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
 
-# function t() {
-#   exa -l --git --group-directories-first -T $1
-# }
-
 function e() {
   code ${1:-.}
 }
@@ -74,10 +70,6 @@ function p5-start {
   rm -rf .git
 }
 
-function status {
-  l
-}
-
 # Create path and file
 # https://stackoverflow.com/a/37567557
 ptouch() {
@@ -88,78 +80,23 @@ ptouch() {
     done
 }
 
-# ------------------------------------
 # Docker alias and function
+# Removed, but link left for possible future use
 # https://gist.github.com/jverdeyen/741d29a8e8d7a8e5d4dd4346fd1bd788
-# ------------------------------------
 
-# Get latest container ID
-alias dl="docker ps -l -q"
 
-# Get container process
-alias dps="docker ps"
-
-# Get process included stop container
-alias dpa="docker ps -a"
-
-# Get images
-alias di="docker images"
-
-# Get container IP
-alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-
-# Run deamonized container, e.g., $dkd base /bin/echo hello
-alias dkd="docker run -d -P"
-
-# Run interactive container, e.g., $dki base /bin/bash
-alias dki="docker run -i -t -P"
-
-alias dc="docker-compose"
-
-# Stop all containers
-dstop() { docker stop $(docker ps -a -q); }
-
-# Remove all containers
-drm() { docker rm $(docker ps -a -q); }
-
-# Stop and Remove all containers
-alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
-
-# Remove all images
-dri() { docker rmi $(docker images -q); }
-
-# Dockerfile build, e.g., $dbu tcnksm/test
-dbu() { docker build -t=$1 .; }
-
-# Execute command in Docker Compose service¬
-dexec() { docker exec -it `docker-compose ps -q $1` $2; }
-
-# Show all alias related docker
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-
-alias dps="docker ps -q | xargs docker inspect --format '{{ .Id }} - {{ .Name }} - {{ .NetworkSettings.IPAddress }}'"
-
-# ------------------------------------
-# ------------------------------------
-# ------------------------------------
-
-alias .="status"
-alias be="bundle exec"
+alias .="l"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
-alias c='code'
 alias d="python ~/.dotFiles/separate.py"
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias g="git"
 alias ga="git add"
 alias gst="git status"
 alias gc="git commit -m "
-alias gd="git diff --word-diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias m="mix"
-alias real="realpath"
 alias i="iex"
 alias im="iex -S mix"
-# alias ip="PYENV_VERSION=3.7.1 ipython"
 alias ip="ipython"
 alias mp="mix phx.server"
 alias mt="mix test --slowest 25 --seed 0"
@@ -193,20 +130,11 @@ PATH="$HOME/Code/dev-tools/bin:$PATH"
 PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
 
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-
 # elixir
 PATH="$HOME/.mix:$PATH"
 export PATH
 
 export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
-
-
-# if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-#   source $HOME/.rvm/scripts/rvm;
-# fi
 
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)

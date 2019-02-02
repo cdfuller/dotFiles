@@ -11,6 +11,7 @@
 	b = branch --all --verbose --verbose --sort=-authordate
 	c = commit -m
 	co = checkout
+	d = diff --word-diff
 	f= fetch -v
 	g= grep --context 3 --line-number --heading --break --exclude-standard --untracked
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
