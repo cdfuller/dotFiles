@@ -35,7 +35,6 @@
 ```
 brew install \
 coreutils \
-cowsay \
 diff-so-fancy \
 elixir \
 exa \
