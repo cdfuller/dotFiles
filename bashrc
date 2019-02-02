@@ -60,6 +60,16 @@ function chpwd() {
   echo -e "`realpath $p/..`/\e$BBlue`basename $p`\e$Color_Off"
 }
 
+function gti() {
+  echo "Vroom! Vroom!"
+  git $@
+}
+
+function mt() {
+  echo "Running 'mix test --seed 0'"
+  mix test --seed 0
+}
+
 function ne {
   (PATH=$(npm bin):$PATH; eval $@;)
 }
@@ -87,19 +97,26 @@ ptouch() {
 
 alias .="l"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+<<<<<<< HEAD
 alias d="python ~/.dotFiles/separate.py"
+=======
+alias c='code'
+alias d="$HOME/.dotFiles/bin/separate"
+>>>>>>> 79956e0e9610b1f14644f04e25ce8b4bce0d24ce
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias g="git"
 alias ga="git add"
+alias gac="git commit -am"
 alias gst="git status"
 alias gc="git commit -m "
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+alias grc="git rebase --continue"
 alias m="mix"
 alias i="iex"
 alias im="iex -S mix"
 alias ip="ipython"
 alias mp="mix phx.server"
-alias mt="mix test --slowest 25 --seed 0"
+alias pglog="lnav /usr/local/var/log/postgres.log"
 alias python="python3"
 alias pip="pip3"
 alias server="python3 -m http.server"
@@ -113,6 +130,8 @@ export CDPATH=~/Code:~/Code/sandbox:~/.dotFiles/CDPATH
 export GOPATH=~/.go
 
 export HISTCONTROL=ignorespace
+
+export HOMEBREW_DEVELOPER=1
 
 # Enable shell history in IEx
 export ERL_AFLAGS="-kernel shell_history enabled"
@@ -128,10 +147,12 @@ PATH="$HOME/Code/dev-tools/bin:$PATH"
 
 # make
 PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
+
+PATH="/usr/local/opt/postgresql@10/bin:$PATH"
 
 # elixir
 PATH="$HOME/.mix:$PATH"
+
 export PATH
 
 export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
