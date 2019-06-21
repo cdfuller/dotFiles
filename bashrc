@@ -90,12 +90,11 @@ ptouch() {
     done
 }
 
-# Docker alias and function
+# Docker aliases and functions
 # Removed, but link left for possible future use
 # https://gist.github.com/jverdeyen/741d29a8e8d7a8e5d4dd4346fd1bd788
 
-
-alias .="l"
+alias activate="source venv/bin/activate"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 <<<<<<< HEAD
 alias d="python ~/.dotFiles/separate.py"
@@ -116,7 +115,7 @@ alias i="iex"
 alias im="iex -S mix"
 alias ip="ipython"
 alias mp="mix phx.server"
-alias pglog="lnav /usr/local/var/log/postgres.log"
+alias pglog="tail -f /usr/local/var/log/postgres.log"
 alias python="python3"
 alias pip="pip3"
 alias server="python3 -m http.server"
@@ -142,9 +141,6 @@ PATH="/usr/local/opt/ruby/bin:$PATH"
 # Add bin directory for git subcommands
 PATH="$HOME/.dotFiles/bin:$PATH"
 
-# Transport tech dev-tools
-PATH="$HOME/Code/dev-tools/bin:$PATH"
-
 # make
 PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
@@ -154,8 +150,6 @@ PATH="/usr/local/opt/postgresql@10/bin:$PATH"
 PATH="$HOME/.mix:$PATH"
 
 export PATH
-
-export TT_DEV_BACKUP_DIR="$HOME/Code/DB_BACKUPS"
 
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
