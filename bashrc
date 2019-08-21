@@ -96,12 +96,7 @@ ptouch() {
 
 alias activate="source venv/bin/activate"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
-<<<<<<< HEAD
 alias d="python ~/.dotFiles/separate.py"
-=======
-alias c='code'
-alias d="$HOME/.dotFiles/bin/separate"
->>>>>>> 79956e0e9610b1f14644f04e25ce8b4bce0d24ce
 alias dbreset="rails db:drop && rails db:create && rails db:migrate && rails db:seed"
 alias g="git"
 alias ga="git add"
