@@ -107,3 +107,4 @@ jspm_packages/
 .elixir_ls/
 *.iml
 .favorites.json
+.envrc
