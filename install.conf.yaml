@@ -7,5 +7,6 @@
     ~/.gitignore_global: gitignore_global
     ~/.pythonrc: pythonrc
     ~/.zshrc: zshrc
+    ~/.nvimrc: nvimrc
 
 
