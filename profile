@@ -62,9 +62,11 @@ alias gst="git status"
 alias gc="git commit -m "
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias ip="ipython"
+alias nb="jupyter notebook"
 alias server="python3 -m http.server"
 alias s="server"
 alias t="exa -l --git --group-directories-first -T"
+alias vim="nvim"
 
 export CDPATH="$HOME/Code"
 
