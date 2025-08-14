@@ -101,3 +101,11 @@ if [ -f ~/.bashrc ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Bind Ctrl+U to insert the last argument from the previous command
+# Example:
+#   $ echo one two three
+#   (press Ctrl+U) → inserts "three" into your current command line
+autoload -Uz repeat-last-argument
+zle -N repeat-last-argument
+bindkey '^U' repeat-last-argument 
